@@ -210,10 +210,15 @@ export default function ReviewForm(props) {
                                         remain in dynamic control if new score selected or swap back to static on mouse leave
                                      */
                                     (
-                                    ((props.readOnly === false ) && 
-                                    (mode !== 'editMode')) || 
-                                    (mode === 'editMode' && 
-                                    (hoverState === true || rating !== null)))
+                                        (props.readOnly === false  && mode !== 'editMode')
+                                        || 
+                                        (
+                                            (props.readOnly === false ) 
+                                            && 
+                                            (mode === 'editMode')
+                                            &&
+                                            (hoverState === true || rating !== null)
+                                        ))
                                     )
                                     ?
                                     <RatingsFormControl  setRating={setRating} styles={styles} reviewData={data.reviewData}/> 
