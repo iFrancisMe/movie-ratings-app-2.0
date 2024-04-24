@@ -1,0 +1,23 @@
+:root {
+  --theme-main-color: rgb(9, 90, 204);
+  --theme-alt-color: rgba(240, 187, 39, 0.945);
+  --theme-hover-color: white;
+  --theme-secondary-color: rgb(80, 80, 80, 1);
+  --theme-border-color: dimgrey;
+  --theme-gradient: linear-gradient(to right, rgba(0,0,0,1) 10%,rgba(80,80,80,1) 70%);
+  --theme-dark-color: RGB(33, 37, 41);
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

@@ -1,0 +1,30 @@
+
+
+.AppLogoReel {
+    display: flex;
+    animation: App-logo-spin infinite 1s linear; 
+    color: var(--theme-secondary-color);
+}
+
+.AppLogoProjector {
+    display: flex;
+
+}
+
+.fullLogo {
+    margin: auto;
+    max-width: 1000px;
+    width: 55px;
+    position: relative;
+    color: var(--theme-alt-color);
+    min-width: 55px;
+}
+  
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

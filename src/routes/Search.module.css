@@ -1,0 +1,21 @@
+.movieCardDiv {
+    position: absolute;
+    visibility: hidden;
+    margin: auto;
+}
+
+.slides {
+    height: 100svh;
+    margin: auto;
+}
+
+.marqueeDiv {
+    display: none;
+}
+
+@media only screen and (max-width: 780px) {
+        
+    .slides {
+        width: 100svw;
+    }
+  }

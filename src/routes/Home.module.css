@@ -1,0 +1,100 @@
+.slides {
+    max-width: 100%;
+    z-index: 1;
+}
+
+.marquee {
+    overflow: hidden;
+    animation: marquee 5s linear;
+    font-weight: 400;
+    color: white;
+    text-shadow: 0 0 5px var(--theme-alt-color), 0 0 5px var(--theme-alt-color), 0 0 2px var(--theme-alt-color);
+}
+
+@keyframes marquee {
+    0% {
+      transform: translate(75%, 0);
+    }
+    100% {
+      transform: translate(-100%, 0);
+    }
+}
+
+.movieCardDiv {
+  position: absolute;
+  top: 5%;
+  margin: auto;
+}
+
+.movieCard {
+  min-width: 500px;
+  width: 56vw;
+  max-width: 800px;
+  margin: auto;
+  top: 25%;
+  justify-content: center;
+  align-content: center;
+  border-style: solid;
+  border-color: var(--theme-border-color);
+  border-radius: 3rch;
+  border-width: 3px;
+  overflow: hidden;
+}
+
+.movieCardImage {
+  width: 40%;
+}
+.movieCardTitle {
+  color: var(--theme-main-color);
+  padding-top: 5px;
+  padding-bottom: 10px;
+  max-height: 2em;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.movieCardText {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 6em;
+  margin-top: 20px;
+  color: var(--theme-border-color);
+}
+
+.ratingsCard {
+  width: 200px;
+  color: var(--theme-main-color);
+  margin: auto;
+}
+
+.ratingsHeader {
+  background-color: transparent;
+  -webkit-user-select: none;
+  user-select: none;
+  
+  div:hover {
+      box-shadow: 0 0 5px var(--theme-main-color), 0 0 5px var(--theme-main-color), 0 0 2px var(--theme-main-color);
+      cursor: pointer;
+  }
+}
+
+.ratingsStars {
+  color: var(--theme-alt-color);
+}
+
+.ratingsScore {
+  color: var(--theme-main-color);
+  font-style: italic;
+  font-size: .6em;
+  margin-top: 5px;
+}
+
+@media only screen and (max-width: 780px) {
+        
+  .movieCardDiv {
+    visibility: hidden;
+  }
+
+  
+      
+}

@@ -1,0 +1,51 @@
+.starControl {
+    display: flex;
+    margin: auto;
+    color: var(--theme-main-color);
+    box-shadow: 0 0 5px var(--theme-main-color), 0 0 5px var(--theme-main-color), 0 0 5px var(--theme-main-color);
+    width: 8em;
+    padding-left: .5em;
+    padding-bottom: .5em;
+    cursor: pointer;
+}
+
+.ratingsCard {
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-style: none;
+    
+    svg {
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+}
+
+.ratingsHeader {
+    display: none;
+}
+
+.ratingsStars {
+    color: var(--theme-main-color);
+}
+
+.ratingsScore {
+    display: none;
+}
+
+.reviewCardDiv {
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.reviewCard {
+    background-color: white;
+    color: var(--theme-main-color);
+    border-color: var(--theme-main-color);
+}
+
+.reviewForm {
+    background-color: var(--theme-alt-color);
+    color: var(--theme-main-color);
+    border-color: var(--theme-border-color);
+}

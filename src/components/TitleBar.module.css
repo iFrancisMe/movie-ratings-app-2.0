@@ -1,0 +1,104 @@
+:root {
+    color: var(--theme-main-color);
+}
+
+.searchForm {
+    background: grey;
+    position: absolute;
+    z-index: 109;
+    animation: Div-Show normal .5s;
+    padding-right: 1.5em;
+    padding: 1.5em;
+    width: 100%;
+    margin: auto;
+    text-align: center;;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    color: whitesmoke;
+    display: inline-block;
+    .btn {
+        border-style: solid;
+        border-radius: 10px;
+    }
+}
+
+.searchFormSubmit {
+    background-color: var(--theme-main-color);
+    color: whitesmoke;
+    margin-top: 20px;
+}
+
+.homeButton:hover, .searchButton:hover {
+    color: var(--theme-hover-color);
+    cursor: pointer;
+}
+
+.homeButton:active, .searchButton:active {
+    border-color: white;
+    opacity: .5;
+}
+
+.title {
+    color: var(--theme-main-color);
+    margin: auto;
+    font-size: 5px;
+    padding-left: 10px;
+}
+
+.title:hover {
+    text-shadow: 0 0 5px white, 0 0 5px white, 0 0 5px white;
+}
+
+.navLinks {
+    z-index: 111;
+    text-decoration: none;
+}
+
+@keyframes Div-Show {
+    0% { top: -100px } 100% { top: 90px } 
+}
+
+.titleBarMainDiv {
+    background: var(--theme-gradient);
+    z-index: 110;
+    -webkit-user-select: none;
+    user-select: none;
+    scroll-snap-align: start;
+    min-height: 75px;
+    max-height: 99px;
+    overflow: hidden;
+}
+
+.titleBarBackground {
+    background-repeat: 'repeat-x';
+    background-image: url("data:image/svg+xml,%3Csvg fill='currentColor' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg' xmlns:svg='http://www.w3.org/2000/svg'%3E%3Cpath d='M 1,16 A 1,1 0 0 1 0,15 V 1 A 1,1 0 0 1 1,0 h 14 a 1,1 0 0 1 1,1 v 14 a 1,1 0 0 1 -1,1 z M 1,12 H 7 V 4 H 1 Z M 9,4 v 8 h 6 V 4 Z M 1,15 H 3 V 13 H 1 Z m 3,-2 v 2 h 2 v -2 z m 3,2 H 9 V 13 H 7 Z m 3,-2 v 2 h 2 v -2 z m 3,2 h 2 V 13 H 13 Z M 1,1 V 3 H 3 V 1 Z M 4,3 H 6 V 1 H 4 Z M 7,1 V 3 H 9 V 1 Z m 3,2 h 2 V 1 h -2 z m 3,-2 v 2 h 2 V 1 Z' id='path1' /%3E%3C/svg%3E");
+    opacity: .05;
+    margin: auto;
+    height: 3em;
+    max-height: 70px;
+    width: 100%;
+    z-index: 0;
+    background-color: silver;
+    svg{
+        transform: rotate(90deg);
+    }
+}
+
+.homeButton {
+    color: var(--theme-main-color);
+    background-color: var(--theme-alt-color);
+    border-color: var(--theme-border-color);
+    border-width: 2px;
+    border-style: solid;
+    margin: auto;
+}
+
+.searchButton {
+    
+    color: var(--theme-alt-color);
+    background-color: var(--theme-main-color);
+    border-color: var(--theme-border-color);
+    border-width: 2px;
+    border-style: solid;
+    margin: auto;
+}
